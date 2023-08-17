@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
+import {ReusableModule} from "./reusable/reusable.module";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'default' }),
     NbLayoutModule,
-    NbEvaIconsModule
+    NbEvaIconsModule,
+    ReusableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
