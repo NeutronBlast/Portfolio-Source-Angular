@@ -1,0 +1,58 @@
+/* Header desktop */
+.desktop-only {
+  display: flex; /* Set the layout to flexbox */
+  justify-content: space-between; /* Aligns children with space between them */
+  align-items: center; /* Center-aligns children vertically */
+  margin: 0rem 1rem;
+}
+
+.desktop-only img {
+  margin-top: 3rem; /* Adjust this if necessary */
+  width: 120px;
+}
+
+.mobile-only img {
+  margin-top: 2rem; /* Adjust this if necessary */
+  width: 100px;
+}
+
+.links a { /* Target the anchor tags within the .links class */
+  margin-right: 20px; /* Adds space to the right of each link */
+  text-decoration: none; /* Optionally remove underline */
+  font-weight: bold;
+}
+
+/* Header mobile */
+.mobile-only {
+  display: none; /* By default, hide on desktop */
+  align-items: center; /* Align children vertically */
+  justify-content: space-between; /* Add space between children */
+  display: flex; /* Use flexbox for layout */
+  margin: 0rem 0.25rem;
+}
+
+.links-mobile button {
+  background: none; /* Remove default background */
+  border: none; /* Remove default border */
+}
+
+/* Media query to show the mobile-only div on screens smaller or equal to 768px */
+@media only screen and (max-width: 768px) {
+  .mobile-only {
+    display: flex;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: flex;
+  }
+}

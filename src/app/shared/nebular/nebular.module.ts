@@ -1,10 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NbCardModule } from "@nebular/theme";
+import {
+  NbButtonModule,
+  NbCardModule,
+  NbContextMenuModule,
+  NbIconModule
+} from "@nebular/theme";
 
 const NEBULAR_MODULES = [
   CommonModule,
-  NbCardModule
+  NbCardModule,
+  NbIconModule,
+  NbButtonModule,
+  NbContextMenuModule
 ]
 
 @NgModule({

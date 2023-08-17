@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { NebularModule } from "./nebular/nebular.module";
-import { NbLayoutModule, NbThemeModule } from "@nebular/theme";
+import {NbLayoutModule, NbMenuModule, NbThemeModule} from "@nebular/theme";
 import { NbEvaIconsModule } from "@nebular/eva-icons";
 
 @NgModule({
@@ -13,6 +13,7 @@ import { NbEvaIconsModule } from "@nebular/eva-icons";
     ReactiveFormsModule,
     NbLayoutModule,
     NbEvaIconsModule,
+    NbMenuModule.forRoot(),
     NebularModule
   ],
   exports: [
@@ -21,6 +22,7 @@ import { NbEvaIconsModule } from "@nebular/eva-icons";
     NbThemeModule,
     NbLayoutModule,
     NbEvaIconsModule,
+    NbMenuModule,
     NebularModule
   ]
 })
