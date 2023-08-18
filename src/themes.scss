@@ -2,18 +2,26 @@
 @use '@nebular/theme/styles/theming' as *;
 @use '@nebular/theme/styles/themes/default';
 
+$blue: #007BFF;
+$white: #F8F8F8;
+$black: #1B1B1B;
+$grey: #2E2E2E;
+
 $nb-themes: nb-register-theme((
+  // Header
+  header-background-color: $blue,
+  header-text-color: $white,
 
-  // add your variables here like:
+  // Footer
+  footer-background-color: $grey,
+  footer-text-color: $white,
+  footer-divider-color: $grey,
 
-  // color-primary-100: #f2f6ff,
-  // color-primary-200: #d9e4ff,
-  // color-primary-300: #a6c1ff,
-  // color-primary-400: #598bff,
-  // color-primary-500: #3366ff,
-  // color-primary-600: #274bdb,
-  // color-primary-700: #1a34b8,
-  // color-primary-800: #102694,
-  // color-primary-900: #091c7a,
+  // Layout
+  layout-background-color: $black,
+  layout-text-color: $white,
+  text-basic-color: $white,
 
+  // Icon
+  icon-basic-color: $white,
 ), default, default);
