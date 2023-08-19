@@ -1,0 +1,95 @@
+/* TITLE STYLES */
+.introduction {
+  background: url('../../assets/pattern-title.jpg') repeat;
+}
+
+.salute {
+  margin-top: 5rem;
+  background-color: #4AA0FF;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 300px;
+  max-height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.salute-text {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.salute-text nb-icon {
+  margin-right: 0.5rem;
+}
+
+.introduction-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #4AA0FF;
+}
+
+.introduction-text {
+  text-align: justify;
+}
+
+.row {
+  display: flex;
+  flex-direction: column; /* Contents inside the row are stacked vertically */
+  margin-bottom: 2rem;
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 769px) {
+  .introduction-content {
+    display: flex; /* Set to flex to allow row and image to be in the same line */
+    align-items: flex-start; /* Aligns children at the start */
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .introduction-text, .introduction-title {
+    margin-bottom: 10px; /* Spacing between items in the row */
+  }
+
+  .title-decoration-image {
+    margin-top: 2rem;
+    width: 400px;
+  }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+  .salute {
+    display: none;
+  }
+
+  .introduction-content {
+    display: flex; /* Set to flex to allow reordering */
+    flex-direction: column; /* Items stack vertically */
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .introduction-content img {
+    order: -1; /* Make the image appear first */
+  }
+
+  .row {
+    order: 1; /* Make the row appear after the image */
+  }
+
+  .title-decoration-image {
+    margin-top: 2rem;
+    width: 250px;
+  }
+
+  .introduction-title {
+    text-align: center;
+  }
+}

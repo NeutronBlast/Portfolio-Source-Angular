@@ -21,6 +21,9 @@ $nb-themes: nb-register-theme((
   layout-background-color: $black,
   layout-text-color: $white,
   text-basic-color: $white,
+  layout-padding: 0rem 0rem 0rem,
+  layout-medium-padding: 0rem 0rem 0rem,
+  layout-small-padding: 0rem 0rem 0rem,
 
   // Icon
   icon-basic-color: $white,

@@ -6,6 +6,10 @@
   margin: 0rem 1rem;
 }
 
+img {
+  z-index: 9999;
+}
+
 .desktop-only img {
   margin-top: 3rem; /* Adjust this if necessary */
   width: 120px;
