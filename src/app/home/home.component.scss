@@ -118,7 +118,7 @@
   justify-content: center; /* This ensures the content starts from the left */
 }
 
-nb-icon, .tool-name {
+.tool nb-icon, .tool-name {
   color: #4AA0FF; /* for desktop */
 }
 
@@ -157,10 +157,96 @@ nb-icon, .tool-name {
     min-width: 200px;
   }
 
-  nb-icon, .tool-name {
+  .tool nb-icon, .tool-name {
     color: #1B1B1B;
   }
   .tool-name {
     color: #F6F6F6;
+  }
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap; /* To wrap on mobile */
+  justify-content: space-between;
+}
+
+.skill {
+  width: 50%; /* Makes each skill div occupy half the container on desktop */
+  box-sizing: border-box; /* To make sure padding doesn't increase width */
+}
+
+.skill-description {
+  text-align: justify; /* Justifies the text */
+}
+
+.programming nb-icon {
+  margin-top: 1rem;
+  font-size: 7rem; /* Increases the icon size to 3 rem */
+}
+
+.programming nb-icon {
+  color: #4AA0FF;
+}
+
+/* Responsive rules for mobile */
+@media (max-width: 768px) { /* This breakpoint can be adjusted based on needs */
+  .skills {
+    margin: 0rem 2rem 0rem 2rem;
+  }
+
+  .skill {
+    width: 100%; /* Makes each skill div occupy the full width on mobile */
+  }
+
+  .engineering .engineering-img {
+    order: 1; /* Makes the image come after the text */
+  }
+
+  .engineering img {
+    width: 250px;
+  }
+
+  .programming nb-icon {
+    align-self: center;
+  }
+
+  .programming {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .engineering {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Desktop specific rules */
+@media (min-width: 769px) {
+  .engineering img {
+    width: 250px;
+    align-self: end;
+  }
+
+  .skill-description {
+    padding: 1rem;
+  }
+
+  .engineering {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center aligns content vertically */
+  }
+
+  .skills {
+    margin: 4rem 4rem 4rem 4rem;
+  }
+
+  .programming nb-icon {
+    padding: 1rem;
   }
 }
