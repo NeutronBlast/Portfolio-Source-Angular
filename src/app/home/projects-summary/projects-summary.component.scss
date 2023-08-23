@@ -1,0 +1,57 @@
+.projects-content {
+  text-align: center; /* This will center the description text. */
+}
+
+.featured-projects-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4AA0FF;
+}
+
+a {
+  color: #4AA0FF;
+}
+
+.project-row {
+  display: flex;
+  flex-wrap: wrap; /* Makes the project items wrap on smaller screens */
+  justify-content: space-between; /* Adds space between project items on desktop */
+  margin-top: 1rem;
+}
+
+.project {
+  background-color: #2E2E2E;
+  border-radius: 0.5rem; /* Same color as background so it's like a "spacing border" */
+  width: calc(33.333% - 1rem); /* Assuming each project takes up 1/3 of the row minus the border on each side */
+  box-sizing: border-box; /* Border is counted in the element's total width/height */
+  text-align: center; /* This centers the content inside each project */
+  margin-bottom: 1rem; /* Add some spacing for mobile */
+}
+
+.project img,
+.project-title,
+.project-description {
+  margin: 0.5rem; /* Adds a little spacing between these elements */
+}
+
+.project-description {
+  font-size: 0.8rem;
+}
+
+.project-title {
+  color: #4AA0FF;
+  font-weight: bold;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) { /* This breakpoint can be adjusted based on your requirements */
+  .project {
+    width: 100%; /* On mobile, each project takes up the full width */
+  }
+}
+/* Desktop view adjustments */
+@media (min-width: 769px) { /* This breakpoint can be adjusted based on your requirements */
+  .projects {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+}

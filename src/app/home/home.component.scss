@@ -182,7 +182,6 @@
 }
 
 .programming nb-icon {
-  margin-top: 1rem;
   font-size: 7rem; /* Increases the icon size to 3 rem */
 }
 
@@ -249,4 +248,10 @@
   .programming nb-icon {
     padding: 1rem;
   }
+}
+
+/* PROJECTS */
+app-projects-summary {
+  width: 100%;
+  margin-top: 2rem;
 }
