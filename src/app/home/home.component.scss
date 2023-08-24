@@ -255,3 +255,109 @@ app-projects-summary {
   width: 100%;
   margin-top: 2rem;
 }
+
+/* CONTACT */
+.blue-bg {
+  background-color: #037CFE;
+}
+
+.light-blue-bg {
+  background-color: #4AA0FF;
+}
+
+.media {
+  display: flex;
+  flex: 1; /* Makes each .media element take up equal width */
+  align-items: center; /* Vertical alignment of items */
+  justify-content: center;
+  box-sizing: border-box; /* Include padding and border in element's total width */
+  cursor: pointer;
+}
+
+.media a,
+.mail a {
+  display: flex;
+  align-items: center; /* vertically align items in the flex container */
+  justify-content: center; /* horizontally align items in the flex container */
+  text-decoration: none; /* remove underline */
+  color: inherit; /* inherit text color from parent */
+  padding: 0; /* remove any padding */
+  margin: 0; /* remove any margin */
+}
+
+
+/* Desktop-specific styles */
+@media screen and (min-width: 769px) {
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap onto the next line */
+  }
+  .media {
+    width: 25%; /* Each .media element will take 25% of the container width */
+    margin: 0; /* Removes margin to eliminate gaps */
+  }
+
+  .media nb-icon {
+    font-size: 4rem;
+    margin-right: 1rem;
+  }
+
+  .media-name {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+}
+
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+  .contact-content {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    gap: 1rem; /* Add a gap between items */
+    margin: 0rem 4rem 2rem 4rem;
+    padding: 2rem;
+  }
+  .media {
+    width: 100%; /* Full width on mobile */
+  }
+
+  .media nb-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  .media-name {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+}
+
+/* MAIL */
+@media screen and (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+.mail {
+  background-color: #F6F6F6;
+  color: #037CFE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mail nb-icon {
+  font-size: 2rem;
+}
+
+.mail-cta {
+  font-size: 1.2rem;
+  color: #037CFE;
+  font-weight: bold;
+  margin-left: 1rem;
+}
