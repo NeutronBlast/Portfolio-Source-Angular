@@ -1,0 +1,71 @@
+/* Desktop styles */
+.work-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.work-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.engineering-img {
+  display: block; /* show the image on desktop */
+  width: 160px;
+  margin-right: 20px; /* Optional: Add some margin to the right of the image */
+}
+
+.work-description {
+  text-align: justify;
+}
+
+@media only screen and (min-width: 769px) {
+  .work {
+    margin: 2rem 5rem;
+  }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+  .work-header,
+  .work-row {
+    flex-direction: column; /* Stack vertically */
+  }
+
+  .engineering-img {
+    display: none; /* Hide the image on mobile for work-header */
+  }
+
+  .work-row .engineering-img {
+    display: block; /* Show the image on mobile for work-row */
+  }
+
+  .work {
+    margin: 2rem 2rem;
+  }
+}
+
+/* Work Name styles */
+.work-name {
+  font-weight: bold;
+  color: #4AA0FF;
+}
+
+/* Section Title styles */
+.section-title {
+  font-weight: bold;
+  color: #4AA0FF;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  line-height: 1.5;
+}
+
+.work-description {
+  font-size: 0.9rem;
+}
