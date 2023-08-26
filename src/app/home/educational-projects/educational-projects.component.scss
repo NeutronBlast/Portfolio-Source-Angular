@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 .engineering-img {
@@ -46,6 +47,22 @@
   .work {
     margin: 2rem 2rem;
   }
+
+  .ed-img {
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 769px){
+  .ed-img {
+    width: 700px;
+    margin-right: 2rem;
+  }
+
+  .ed-img-reverse {
+    width: 700px;
+    margin-left: 2rem;
+  }
 }
 
 /* Work Name styles */
@@ -66,6 +83,8 @@
   line-height: 1.5;
 }
 
+.description-section ul li,
 .work-description {
   font-size: 0.9rem;
+  line-height: 1.5;
 }

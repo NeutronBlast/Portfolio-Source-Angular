@@ -1,20 +1,96 @@
 <div class="work">
   <div class="work-header">
     <div class="title-section">
-      <p class="section-title">Work</p>
-      <p class="section-subtitle">Crafting Digital Artistry: A Portfolio of Code, Creativity, and Innovation</p>
+      <p class="section-title">Educational Projects</p>
+      <p class="section-subtitle">Empowering Learning Through Code: A Showcase of Educational
+        Innovations and Technological Triumphs</p>
     </div>
     <img class="engineering-img" src="assets/picrew-2.png" alt="Engineering Image">
   </div>
 
   <div class="work-section">
     <div class="work-row">
-      <img class="engineering-img" src="assets/picrew-2.png" alt="Engineering Image">
+      <img src="assets/screenshots/pipes.png" class="ed-img">
       <div class="description-section">
-        <p class="work-name">Name</p>
+        <p class="work-name">Pipes and concurrent programming</p>
         <p class="work-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet justo nec lorem elementum placerat eu non libero. Nulla porttitor ornare lobortis. Morbi leo libero, ultrices et ligula ut, gravida dignissim nunc. Integer justo est, tincidunt et metus nec, pellentesque aliquam tortor. Curabitur varius consequat lacus nec sagittis. Vivamus hendrerit nisl eget commodo accumsan. Aenean id tellus rutrum lectus porta faucibus. Quisque eu dignissim justo, nec faucibus turpis. Suspendisse posuere, massa quis dapibus ultrices, diam ipsum aliquet enim, a dapibus velit sapien et neque. Nam suscipit, lectus et egestas congue, nisi eros eleifend nibh, in elementum velit tortor et elit. Integer volutpat dolor et nunc aliquet ornare. Vivamus nec quam et nisl ultricies ornare ac id felis. Mauris elit lorem, tincidunt mattis dignissim eu, pharetra sit amet dolor.
+          Console application that applies crypting and decrypting using processes and pipes
+          <br><br>
+          <strong>Goals: </strong>
         </p>
+        <ul>
+          <li>Use the primitives fork, wait, exec, exit for concurrent process management</li>
+          <li>Use pipes as communication mechanism between processes</li>
+          <li>Use primitives to measure the execution time between processes/threads</li>
+          <li>Use primitives to manage either binary or text files</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="work-row">
+      <div class="description-section">
+        <p class="work-name">Forks & Threads on C</p>
+        <p class="work-description">
+          Console application that applies crypting and decrypting using processes and threads
+          <br><br>
+          <strong>Goals:</strong>
+        </p>
+        <ul>
+          <li>Use the primitives fork, wait, exec, exit for concurrent process management</li>
+          <li>Use primitives to measure the execution time between processes/threads</li>
+          <li>Use primitives to manage either binary or text files</li>
+        </ul>
+      </div>
+      <img src="assets/screenshots/ft.png" class="ed-img-reverse">
+    </div>
+
+    <div class="work-row">
+      <img src="assets/screenshots/x86.png" class="ed-img">
+      <div class="description-section">
+        <p class="work-name">x86 ASM Project</p>
+        <p class="work-description">
+          Console application controled by the keyboard's arrows, with the left and right arrows you advance or go behind, with the up arrow you avoid the obstacles that will be appearing in the screen as the user advances
+          <br><br>
+          <strong>Project details: </strong>
+        </p>
+        <ul>
+          <li>To calculate the position of every obstacle it will be applied a pseudo random number generator algorithm</li>
+          <li>When an obstacle is avoided, the program will calculate the angle of turn of the wheel using the following formula [(a,b)*(a-1,b-1)]*10 mod 90</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="work-row">
+      <div class="description-section">
+        <p class="work-name">P2Bank</p>
+        <p class="work-description">
+          The main idea of the system is that a person associated to this is able to send and receive money as long as the other person is also affiliated. All the data is loaded through a text file (.TXT), there will be used linked lists to manipulate the information and the modified data will be saved to the same text file when the execution of the program is over
+          <br><br>
+          <strong>Requeriments:</strong>
+        </p>
+        <ul>
+          <li><strong>Data that will be registered to the system: </strong> ID, full name, address, phone number, associated bank accounts</li>
+          <li><strong>Bank accounts: </strong>Each bank account contains an ID, a bank ID, type of account, balance</li>
+          <li><strong>Transactions: </strong>Each transaction contains an ID, amount, type of transaction (payment, charging), date, ID of the person that will receive the transaction, description (40 characters maximum)</li>
+        </ul>
+      </div>
+      <img src="assets/screenshots/pbank.png" class="ed-img-reverse">
+    </div>
+
+    <div class="work-row">
+      <img src="assets/screenshots/earthquake.png" class="ed-img">
+      <div class="description-section">
+        <p class="work-name">Earthquake</p>
+        <p class="work-description">
+          Simple earthquake simulation, each of the given 1..9 regions contains 2 matrixes, one for the possible economic loss and another for the possible number of deaths after the earthquake, the program will calculate the total cost/# of victims and other relevant data.
+          <br><br>
+          <strong>Requeriments:</strong>
+        </p>
+        <ul>
+          <li>The territory given will be a record with 1 to 9 regions. Each geographic region is represented by a matrix (M x N) where each item inside represents a geographic grid. Each region doesn't have more than 900 grids (M = 30 and N = 30 as maximum)</li>
+          <li>Each earthquake has an epicenter, which is the spot where it is iniciated, the epicenter will be represented by a geographic grid [i, j].</li>
+          <li>Each geographic region has 2 matrixes M x N, one represents COST. each grid represents economic losses to consider if an earthquake attacked given zone. There's as well a matrix that represents DEATHS, where the estimation of human losses will be saved. This data is rounded up and expressed as integer numbers.</li>
+        </ul>
       </div>
     </div>
   </div>
