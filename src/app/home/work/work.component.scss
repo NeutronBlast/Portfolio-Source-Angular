@@ -33,6 +33,11 @@
     margin-right: 2rem;
   }
 
+  .ed-img-smaller {
+    width: 500px;
+    margin-right: 2rem;
+  }
+
   .ed-img-reverse {
     width: 700px;
     margin-left: 2rem;
@@ -56,6 +61,16 @@
 
   .work {
     margin: 2rem 2rem;
+  }
+
+  .ed-img,
+  .ed-img-reverse,
+  .ed-img-smaller {
+    width: 250px;
+  }
+
+  .work-row .ed-img-smaller, .work-row .ed-img-reverse {
+    order: -1;  /* This will ensure the image is always before the description-section on mobile */
   }
 }
 

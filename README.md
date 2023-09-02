@@ -86,7 +86,7 @@ To get a local copy up and running follow these simple example steps.
 
 <!-- CONTACT -->
 ## Contact
-@peritoneum on Discord
+@kronemeyer on Discord
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
