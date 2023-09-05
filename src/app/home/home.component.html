@@ -1,4 +1,4 @@
-<div class="introduction">
+<div class="introduction fade-in">
   <div class="introduction-content">
     <div class="row">
       <div class="salute">
@@ -22,7 +22,7 @@
   </div>
 </div>
 
-<div class="tooling">
+<div class="tooling fade-in-delay">
   <p class="section-title">Tooling</p>
   <div class="tooling-content">
     <div class="tooling-row">
@@ -69,7 +69,7 @@
   </div>
 </div>
 
-<div class="skills">
+<div class="skills" appScrollDetector [animationType]="'fadeIn'">
   <div class="programming skill">
     <div class="skill-set">
       <p class="section-title">Programming</p>
@@ -102,10 +102,10 @@
     </div>
   </div>
 
-  <app-projects-summary></app-projects-summary>
+  <app-projects-summary appScrollDetector [animationType]="'fadeIn'"></app-projects-summary>
 </div>
 
-<div class="contact">
+<div class="contact" appScrollDetector [animationType]="'fadeIn'">
   <p class="section-title">Connect With Me</p>
   <div class="contact-content">
     <div class="media blue-bg">

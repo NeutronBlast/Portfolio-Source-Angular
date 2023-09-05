@@ -1,4 +1,8 @@
 /* Desktop styles */
+.work {
+  overflow-x: hidden;
+}
+
 .work-header {
   display: flex;
   align-items: center;
@@ -97,3 +101,4 @@
   font-size: 0.9rem;
   line-height: 1.5;
 }
+

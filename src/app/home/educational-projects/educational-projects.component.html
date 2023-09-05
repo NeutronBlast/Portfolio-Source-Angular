@@ -1,5 +1,5 @@
 <div class="work">
-  <div class="work-header">
+  <div class="work-header" appAnimations [animationName]="'slideUp'">
     <div class="title-section">
       <p class="section-title">Educational Projects</p>
       <p class="section-subtitle">Empowering Learning Through Code: A Showcase of Educational
@@ -9,7 +9,7 @@
   </div>
 
   <div class="work-section">
-    <div class="work-row">
+    <div class="work-row" appAnimations [animationName]="'slideIn'">
       <div class="description-section">
         <p class="work-name">HarmonyVerse</p>
         <p class="work-description">
@@ -23,7 +23,7 @@
       <img src="assets/screenshots/hv.png" class="ed-img-reverse">
     </div>
 
-    <div class="work-row">
+    <div class="work-row" appAnimations [animationName]="'reverseSlideIn'">
       <img src="assets/screenshots/pl.png" class="ed-img">
       <div class="description-section">
         <p class="work-name">PL/SQL and SQL Practices</p>
@@ -43,7 +43,7 @@
       </div>
     </div>
 
-    <div class="work-row">
+    <div class="work-row" appScrollDetector>
       <div class="description-section">
         <p class="work-name">OVPNCTRL</p>
         <p class="work-description">
@@ -68,7 +68,7 @@
       <img src="assets/screenshots/ovpn.png" class="ed-img-reverse">
     </div>
 
-    <div class="work-row">
+    <div class="work-row" appScrollDetector [animationType]="'reverseSlideIn'">
       <img src="assets/screenshots/map.png" class="ed-img">
       <div class="description-section">
         <p class="work-name">UC San Diego Map Assignments</p>
@@ -92,7 +92,7 @@
       </div>
     </div>
 
-    <div class="work-row">
+    <div class="work-row" appScrollDetector>
       <div class="description-section">
         <p class="work-name">Jupyter Images</p>
         <p class="work-description">
@@ -108,7 +108,7 @@
       <img src="assets/screenshots/jupyter.png" class="ed-img-reverse">
     </div>
 
-    <div class="work-row">
+    <div class="work-row" appScrollDetector [animationType]="'reverseSlideIn'">
       <img src="assets/screenshots/wof.png" class="ed-img">
       <div class="description-section">
         <p class="work-name">Wheel of Fortune</p>
@@ -141,7 +141,7 @@
       </div>
     </div>
 
-    <div class="work-row">
+    <div class="work-row" appScrollDetector>
       <div class="description-section">
         <p class="work-name">FastRecommender</p>
         <p class="work-description">
@@ -155,7 +155,7 @@
       <img src="assets/screenshots/fr.png" class="ed-img-reverse">
     </div>
 
-    <div class="work-row">
+    <div class="work-row" appScrollDetector [animationType]="'reverseSlideIn'">
       <img src="assets/screenshots/analysis.png" class="ed-img">
       <div class="description-section">
         <p class="work-name">Sentiment Analysis</p>
@@ -168,7 +168,7 @@
       </div>
     </div>
 
-    <div class="work-row">
+    <div class="work-row" appScrollDetector>
       <div class="description-section">
         <p class="work-name">Snakes & Ladders</p>
         <p class="work-description">
@@ -187,7 +187,7 @@
     </div>
 
 
-    <div class="work-row">
+    <div class="work-row" appScrollDetector [animationType]="'reverseSlideIn'">
       <img src="assets/screenshots/circuit.png" class="ed-img">
       <div class="description-section">
         <p class="work-name">Volume and Brightness controller</p>
@@ -210,7 +210,7 @@
       </div>
     </div>
 
-    <div class="work-row">
+    <div class="work-row" appScrollDetector>
       <div class="description-section">
         <p class="work-name">ToyToys prototype</p>
         <p class="work-description">
@@ -226,7 +226,7 @@
       <img src="assets/screenshots/tt.png" class="ed-img-reverse">
     </div>
 
-    <div class="work-row">
+    <div class="work-row" appScrollDetector [animationType]="'reverseSlideIn'">
       <img src="assets/screenshots/files.png" class="ed-img">
       <div class="description-section">
         <p class="work-name">File system and signal management</p>
@@ -246,7 +246,7 @@
       </div>
     </div>
 
-    <div class="work-row">
+    <div class="work-row" appScrollDetector>
       <div class="description-section">
         <p class="work-name">Proveneet</p>
         <p class="work-description">
@@ -263,7 +263,7 @@
       <img src="assets/screenshots/prov.png" class="ed-img-reverse">
     </div>
 
-    <div class="work-row">
+    <div class="work-row" appScrollDetector [animationType]="'reverseSlideIn'">
       <img src="assets/screenshots/pipes.png" class="ed-img">
       <div class="description-section">
         <p class="work-name">Pipes and concurrent programming</p>
@@ -281,7 +281,7 @@
       </div>
     </div>
 
-    <div class="work-row">
+    <div class="work-row" appScrollDetector>
       <div class="description-section">
         <p class="work-name">Forks & Threads on C</p>
         <p class="work-description">
@@ -298,7 +298,7 @@
       <img src="assets/screenshots/ft.png" class="ed-img-reverse">
     </div>
 
-    <div class="work-row">
+    <div class="work-row" appScrollDetector [animationType]="'reverseSlideIn'">
       <img src="assets/screenshots/x86.png" class="ed-img">
       <div class="description-section">
         <p class="work-name">x86 ASM Project</p>
@@ -314,7 +314,7 @@
       </div>
     </div>
 
-    <div class="work-row">
+    <div class="work-row" appScrollDetector>
       <div class="description-section">
         <p class="work-name">Numeric Methods</p>
         <p class="work-description">
@@ -335,7 +335,7 @@
       <img src="assets/screenshots/numericmethods.png" class="ed-img-reverse">
     </div>
 
-    <div class="work-row">
+    <div class="work-row" appScrollDetector [animationType]="'reverseSlideIn'">
       <img src="assets/screenshots/cex.png" class="ed-img">
       <div class="description-section">
         <p class="work-name">C Programming Exercises</p>
@@ -370,7 +370,7 @@
       </div>
     </div>
 
-    <div class="work-row">
+    <div class="work-row" appScrollDetector>
       <div class="description-section">
         <p class="work-name">P2Bank</p>
         <p class="work-description">
@@ -387,7 +387,7 @@
       <img src="assets/screenshots/pbank.png" class="ed-img-reverse">
     </div>
 
-    <div class="work-row">
+    <div class="work-row" appScrollDetector [animationType]="'reverseSlideIn'">
       <img src="assets/screenshots/earthquake.png" class="ed-img">
       <div class="description-section">
         <p class="work-name">Earthquake</p>

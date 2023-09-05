@@ -361,3 +361,37 @@ app-projects-summary {
   font-weight: bold;
   margin-left: 1rem;
 }
+
+/* Animations */
+
+.fade-in {
+  opacity: 0; /* Initially set opacity to 0 (transparent) */
+  animation: fadeInAnimation 1s ease-in-out forwards; /* Apply the animation */
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0; /* Start with opacity 0 (transparent) */
+  }
+  to {
+    opacity: 1; /* End with opacity 1 (opaque) */
+  }
+}
+
+.fade-in-delay {
+  opacity: 0;
+  animation: fadeInDelayed 1s ease-in-out forwards;
+  animation-delay: 0.5s; /* Delay the start of the animation */
+}
+
+@keyframes fadeInDelayed {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Add a slight vertical movement */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

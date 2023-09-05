@@ -6,6 +6,7 @@ import {HomeRoutingModule} from "./home-routing.module";
 import { WorkComponent } from './work/work.component';
 import { EducationalProjectsComponent } from './educational-projects/educational-projects.component';
 import { ProjectsSummaryComponent } from './projects-summary/projects-summary.component';
+import {ReusableModule} from "../reusable/reusable.module";
 
 @NgModule({
     declarations: [
@@ -17,6 +18,7 @@ import { ProjectsSummaryComponent } from './projects-summary/projects-summary.co
     imports: [
         CommonModule,
         SharedModule,
+        ReusableModule,
         HomeRoutingModule
     ],
     exports: [

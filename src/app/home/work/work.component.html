@@ -1,5 +1,5 @@
 <div class="work">
-  <div class="work-header">
+  <div class="work-header" appAnimations [animationName]="'slideUp'">
     <div class="title-section">
       <p class="section-title">Work</p>
       <p class="section-subtitle">Crafting Digital Artistry: A Portfolio of Code, Creativity, and Innovation</p>
@@ -7,7 +7,7 @@
     <img class="engineering-img" src="assets/picrew-2.png" alt="Engineering Image">
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appAnimations [animationName]="'slideIn'">
     <div class="description-section">
       <p class="work-name">RTrader</p>
       <p class="work-description">
@@ -29,7 +29,7 @@
     <img src="assets/screenshots/rt.png" class="ed-img-reverse">
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appAnimations [animationName]="'reverseSlideIn'">
     <img src="assets/screenshots/vector.png" class="ed-img">
     <div class="description-section">
       <p class="work-name">ChatLogic Vector Database</p>
@@ -48,7 +48,7 @@
     </div>
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appScrollDetector>
     <div class="description-section">
       <p class="work-name">PokerGPT</p>
       <p class="work-description">
@@ -66,7 +66,7 @@
     <img src="assets/screenshots/pgpt.png" class="ed-img-reverse">
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appScrollDetector [animationType]="'reverseSlideIn'">
     <img src="assets/screenshots/cltg.png" class="ed-img">
     <div class="description-section">
       <p class="work-name">ChatLogic Telegram Bot</p>
@@ -86,7 +86,7 @@
     </div>
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appScrollDetector>
     <div class="description-section">
       <p class="work-name">ChatLogic</p>
       <p class="work-description">
@@ -106,7 +106,7 @@
     <img src="assets/screenshots/cl.png" class="ed-img-reverse">
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appScrollDetector [animationType]="'reverseSlideIn'">
     <img src="assets/screenshots/mik.png" class="ed-img">
     <div class="description-section">
       <p class="work-name">Trade Tracker</p>
@@ -132,7 +132,7 @@
     </div>
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appScrollDetector>
     <div class="description-section">
       <p class="work-name">Vacanze</p>
       <p class="work-description">
@@ -155,7 +155,7 @@
     <img src="assets/screenshots/va.png" class="ed-img-reverse">
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appScrollDetector [animationType]="'reverseSlideIn'">
     <img src="assets/screenshots/bc.png" class="ed-img-smaller">
     <div class="description-section">
       <p class="work-name">Bob</p>
@@ -174,7 +174,7 @@
     </div>
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appScrollDetector>
     <div class="description-section">
       <p class="work-name">Auto Moderator</p>
       <p class="work-description">
@@ -195,7 +195,7 @@
     <img src="assets/screenshots/am.png" class="ed-img-reverse">
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appScrollDetector [animationType]="'reverseSlideIn'">
     <img src="assets/screenshots/mu.png" class="ed-img">
     <div class="description-section">
       <p class="work-name">Mercadeo U</p>
@@ -219,7 +219,7 @@
     </div>
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appScrollDetector>
     <div class="description-section">
       <p class="work-name">Town Of Salem Bot</p>
       <p class="work-description">
@@ -233,7 +233,7 @@
     <img src="assets/screenshots/sb.png" class="ed-img-reverse">
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appScrollDetector [animationType]="'reverseSlideIn'">
     <img src="assets/screenshots/pd.png" class="ed-img">
     <div class="description-section">
       <p class="work-name">PerfumeDivine</p>
@@ -245,7 +245,7 @@
     </div>
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appScrollDetector>
     <div class="description-section">
       <p class="work-name">Netdoc</p>
       <p class="work-description">
@@ -262,7 +262,7 @@
     <img src="assets/screenshots/netdoc.png" class="ed-img-reverse">
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appScrollDetector [animationType]="'reverseSlideIn'">
     <img src="assets/screenshots/c19.png" class="ed-img">
     <div class="description-section">
       <p class="work-name">COVID-19 Reporting system</p>
@@ -280,7 +280,7 @@
     </div>
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appScrollDetector>
     <div class="description-section">
       <p class="work-name">Neutron Landing</p>
       <p class="work-description">
@@ -292,7 +292,7 @@
     <img src="assets/screenshots/landing.jpg" class="ed-img-reverse">
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appScrollDetector [animationType]="'reverseSlideIn'">
     <img src="assets/screenshots/perc.png" class="ed-img">
     <div class="description-section">
       <p class="work-name">PerCapital</p>
@@ -306,7 +306,7 @@
     </div>
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appScrollDetector>
     <div class="description-section">
       <p class="work-name">Reading Club</p>
       <p class="work-description">
@@ -322,7 +322,7 @@
     <img src="assets/screenshots/reading.png" class="ed-img-reverse">
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appScrollDetector [animationType]="'reverseSlideIn'">
     <img src="assets/screenshots/onu.png" class="ed-img">
     <div class="description-section">
       <p class="work-name">Survey about entrepreneurship in women</p>
@@ -337,7 +337,7 @@
     </div>
   </div>
 
-  <div class="work-row">
+  <div class="work-row" appScrollDetector>
     <div class="description-section">
       <p class="work-name">Constructores 3000</p>
       <p class="work-description">

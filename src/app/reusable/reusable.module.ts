@@ -3,13 +3,17 @@ import { CommonModule } from '@angular/common';
 import {HeaderComponent} from "./header/header.component";
 import {FooterComponent} from "./footer/footer.component";
 import {SharedModule} from "../shared/shared.module";
+import { AnimationsDirective } from './animations/animations.directive';
+import { ScrollDetectorDirective } from './animations/scroll-detector.directive';
 
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AnimationsDirective,
+    ScrollDetectorDirective
   ],
   imports: [
     CommonModule,
@@ -17,7 +21,9 @@ import {SharedModule} from "../shared/shared.module";
   ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AnimationsDirective,
+    ScrollDetectorDirective
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
