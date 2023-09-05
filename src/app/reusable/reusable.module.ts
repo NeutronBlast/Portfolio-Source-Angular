@@ -5,6 +5,7 @@ import {FooterComponent} from "./footer/footer.component";
 import {SharedModule} from "../shared/shared.module";
 import { AnimationsDirective } from './animations/animations.directive';
 import { ScrollDetectorDirective } from './animations/scroll-detector.directive';
+import {RouterLink} from "@angular/router";
 
 
 
@@ -17,7 +18,8 @@ import { ScrollDetectorDirective } from './animations/scroll-detector.directive'
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    RouterLink
   ],
   exports: [
     HeaderComponent,

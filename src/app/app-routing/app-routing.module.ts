@@ -5,7 +5,7 @@ import { CommonModule } from "@angular/common";
 import { routes } from './routes';
 
 @NgModule({
-  imports: [CommonModule, RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

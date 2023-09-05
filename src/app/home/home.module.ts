@@ -7,6 +7,7 @@ import { WorkComponent } from './work/work.component';
 import { EducationalProjectsComponent } from './educational-projects/educational-projects.component';
 import { ProjectsSummaryComponent } from './projects-summary/projects-summary.component';
 import {ReusableModule} from "../reusable/reusable.module";
+import { HomeContentComponent } from './home-content/home-content.component';
 
 @NgModule({
     declarations: [
@@ -14,6 +15,7 @@ import {ReusableModule} from "../reusable/reusable.module";
         WorkComponent,
         EducationalProjectsComponent,
         ProjectsSummaryComponent,
+        HomeContentComponent,
     ],
     imports: [
         CommonModule,

@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { NebularModule } from "./nebular/nebular.module";
 import {NbLayoutModule, NbMenuModule, NbThemeModule} from "@nebular/theme";
 import { NbEvaIconsModule } from "@nebular/eva-icons";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [],
@@ -14,7 +15,8 @@ import { NbEvaIconsModule } from "@nebular/eva-icons";
     NbLayoutModule,
     NbEvaIconsModule,
     NbMenuModule.forRoot(),
-    NebularModule
+    NebularModule,
+    RouterModule
   ],
   exports: [
     FormsModule,

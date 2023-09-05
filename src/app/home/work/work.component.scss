@@ -27,24 +27,39 @@
   text-align: justify;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1366px) {
   .work {
     margin: 2rem 5rem;
   }
+}
 
-  .ed-img {
-    width: 700px;
-    margin-right: 2rem;
+/* Mobile styles */
+@media only screen and (max-width: 1365px) and (min-width: 769px) {
+  .work-header,
+  .work-row {
+    flex-direction: column; /* Stack vertically */
   }
 
+  .engineering-img {
+    display: none; /* Hide the image on mobile for work-header */
+  }
+
+  .work-row .engineering-img {
+    display: block; /* Show the image on mobile for work-row */
+  }
+
+  .work {
+    margin: 2rem 2rem;
+  }
+
+  .ed-img,
+  .ed-img-reverse,
   .ed-img-smaller {
-    width: 500px;
-    margin-right: 2rem;
+    width: 600px;
   }
 
-  .ed-img-reverse {
-    width: 700px;
-    margin-left: 2rem;
+  .work-row .ed-img-smaller, .work-row .ed-img-reverse {
+    order: -1;  /* This will ensure the image is always before the description-section on mobile */
   }
 }
 
@@ -73,8 +88,21 @@
     width: 250px;
   }
 
+
   .work-row .ed-img-smaller, .work-row .ed-img-reverse {
     order: -1;  /* This will ensure the image is always before the description-section on mobile */
+  }
+}
+
+@media only screen and (min-width: 1366px){
+  .ed-img {
+    width: 700px;
+    margin-right: 2rem;
+  }
+
+  .ed-img-reverse {
+    width: 700px;
+    margin-left: 2rem;
   }
 }
 
